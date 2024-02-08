@@ -1,25 +1,34 @@
+// 예시 사용 방법
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CustomerPage from './page/cusotmer';
+import { Box } from '@chakra-ui/layout';
+import { SideBar } from './components/sidebar';
+import ProductListPage from './page/productList';
+import GroupListPage from './page/group';
+import ServiceListPage from './page/service';
+import MembershipListPage from './page/membership';
+import ReservationListPage from './page/reservation';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box position="fixed" top="0" left="0" display="flex" justifyContent="start" w="100%" h="100%" backgroundColor="gray.50">
+      <SideBar></SideBar>
+      <Box w="100%" hidden>
+        <CustomerPage></CustomerPage>
+      </Box>
+
+      <Box w="100%" hidden><ProductListPage></ProductListPage></Box>
+
+      <Box w="100%" hidden><GroupListPage></GroupListPage></Box>
+
+      <Box w="100%"><ServiceListPage></ServiceListPage></Box>
+
+      <Box w="100%" hidden><MembershipListPage></MembershipListPage></Box>
+
+      <Box w="100%" hidden><ReservationListPage></ReservationListPage></Box>
+
+    </Box>
   );
 }
 
