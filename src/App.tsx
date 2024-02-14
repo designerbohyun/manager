@@ -14,7 +14,7 @@ function App() {
   return (
     <Box position="fixed" top="0" left="0" display="flex" justifyContent="start" w="100%" h="100%" backgroundColor="gray.50">
       <SideBar></SideBar>
-      <Box w="100%" hidden>
+      <Box w="100%">
         <CustomerPage></CustomerPage>
       </Box>
 
@@ -22,7 +22,7 @@ function App() {
 
       <Box w="100%" hidden><GroupListPage></GroupListPage></Box>
 
-      <Box w="100%"><ServiceListPage></ServiceListPage></Box>
+      <Box w="100%" hidden><ServiceListPage></ServiceListPage></Box>
 
       <Box w="100%" hidden><MembershipListPage></MembershipListPage></Box>
 

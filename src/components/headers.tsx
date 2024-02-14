@@ -3,6 +3,7 @@ import { Box, Heading, Text } from "@chakra-ui/layout";
 import { PrimaryBtnIcon } from './buttons/button'
 import { SecondaryBtn } from "./buttons/button";
 import { MdAdd } from 'react-icons/md'
+import { GroupModalBtn } from "./modal/modal";
 
 interface OptionHeaderProps {
     OptionHeaderData: {
@@ -20,7 +21,7 @@ const OptionHeader: React.FC<OptionHeaderProps> = ({ OptionHeaderData }) => {
                 <Heading fontSize='2xl'>{`${OptionHeaderData.heading}`}</Heading>
 
                 <Box w="fit" h="fit" display="flex" justifyContent="center" alignItems="center" gap={2}>
-                    <SecondaryBtn buttonText={`${OptionHeaderData.OptionbuttonText}`}></SecondaryBtn>
+                    <GroupModalBtn></GroupModalBtn>
                     <PrimaryBtnIcon leftIcon={<MdAdd />} buttonText={`${OptionHeaderData.OptionbuttonText}`}></PrimaryBtnIcon>
                 </Box>
             </Box>
