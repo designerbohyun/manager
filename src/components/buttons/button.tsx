@@ -45,7 +45,7 @@ export const DeleteBtn = ({ buttonText = 'Default Text' }) => {
     );
 };
 
-export const IconBtn = ({ Icon = <MdEdit />, buttonText = 'Default Text' }) => {
+export const IconBtn = ({ Icon = <MdEdit /> }) => {
     return (
         <Button colorScheme="gray" size="md" variant="ghost" color="gray.800" fontSize="lg" fontWeight="700" w="2.5rem" p="0">
             {Icon}
