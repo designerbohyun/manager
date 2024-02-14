@@ -6,7 +6,8 @@ import Filter from "../components/filter";
 import DefaultTable from "../components/table";
 import Pagination from "../components/pagination";
 import OptionHeader from "../components/headers";
-
+import DeleteModal from "../components/modal/modal";
+import { InfoAlert } from "../components/toast";
 
 
 const CustomerPage = () => {
