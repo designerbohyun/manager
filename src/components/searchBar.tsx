@@ -9,7 +9,7 @@ import { InputGroup, InputLeftElement } from "@chakra-ui/input";
 const SearchBar = () => {
     return (
         <Box w="100%" p="4" bg="white" borderRadius=".5rem" border="1px solid" borderColor="gray.300" display="flex" justifyItems="center" alignItems="center" gap="3">
-            <InputGroup>
+            <InputGroup >
                 <InputLeftElement pointerEvents="none">
                     <MdGroups />
                 </InputLeftElement>
