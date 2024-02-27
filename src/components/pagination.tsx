@@ -22,6 +22,7 @@ const Pagination = ({ BeforeIcon = <MdChevronLeft />, AfterIcon = <MdChevronRigh
                 w="2.5rem"
                 p="0"
                 bg="white"
+
             >
                 {BeforeIcon}
             </Button>
@@ -31,6 +32,7 @@ const Pagination = ({ BeforeIcon = <MdChevronLeft />, AfterIcon = <MdChevronRigh
                     variant="outline"
                     bg="white"
                     colorScheme="gray"
+                    _focus={{ bg: "cyan.500", color: "white" }}
                 >
                     {item.id}
                 </Button>

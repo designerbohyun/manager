@@ -12,9 +12,13 @@ import ReservationListPage from './page/reservation';
 
 function App() {
   return (
-    <Box position="fixed" top="0" left="0" display="flex" justifyContent="start" w="100%" h="100%" backgroundColor="gray.50">
-      <SideBar></SideBar>
-      <Box w="100%">
+
+    <Box backgroundColor="gray.50" position="absolute" top="0" left="0" w="100vw" h="100vh" display="flex" justifyContent="start">
+      < Box h="100%" >
+        <SideBar></SideBar>
+      </ Box>
+
+      <Box h="100%" overflowY="scroll" overflowX="hidden" w="100%">
         <CustomerPage></CustomerPage>
       </Box>
 
@@ -28,7 +32,7 @@ function App() {
 
       <Box w="100%" hidden><ReservationListPage></ReservationListPage></Box>
 
-    </Box>
+    </Box >
   );
 }
 
