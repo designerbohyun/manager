@@ -3,17 +3,17 @@ import { Box } from "@chakra-ui/layout";
 import { DefaultInput } from "./inputs";
 import PrimaryBtn from "./buttons/button";
 import { MdCall, MdPerson, MdGroups } from "react-icons/md";
-import DefaultSelect from "./select";
+import IconSelect from "./select";
 import { InputGroup, InputLeftElement } from "@chakra-ui/input";
 
 const SearchBar = () => {
     return (
         <Box w="100%" p="4" bg="white" borderRadius=".5rem" border="1px solid" borderColor="gray.300" display="flex" justifyItems="center" alignItems="center" gap="3">
-            <InputGroup>
+            <InputGroup >
                 <InputLeftElement pointerEvents="none">
                     <MdGroups />
                 </InputLeftElement>
-                <DefaultSelect></DefaultSelect>
+                <IconSelect></IconSelect>
             </InputGroup>
 
             <DefaultInput placeHolder="이름을 입력해주세요." Icon={<MdPerson />}></DefaultInput>

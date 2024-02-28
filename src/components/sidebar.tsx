@@ -11,7 +11,7 @@ interface SidebarProps {
 
 export const SideBar = () => {
     return (
-        <Box minW="14.375rem" maxW="14.375rem" h="100%" py={4} px={3} borderRight="1px" borderRightColor="gray.200" boxShadow="md" backgroundColor="white" display="flex" flexDirection="column" gap={2}>
+        <Box w="14.375rem" h="100%" py={4} px={3} borderRight="1px" borderRightColor="gray.200" boxShadow="md" backgroundColor="white" display="flex" flexDirection="column" gap={2}>
             <Link w="70%" px={4} my={2}><Img src="https://i.imgur.com/DpCyo8z.png" alt="Manager Logo"></Img></Link>
             <TeritaryBtn w="100%" leftIcon={<MdCalendarToday />} buttonText="예약 현황"></TeritaryBtn>
             <AccordionBtn></AccordionBtn>

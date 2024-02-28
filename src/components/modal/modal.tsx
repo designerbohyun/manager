@@ -5,7 +5,7 @@ import { useDisclosure } from "@chakra-ui/hooks";
 import { Box, Heading, Text } from "@chakra-ui/layout";
 import { MdDeleteOutline } from "react-icons/md";
 import { Icon } from "@chakra-ui/icon";
-import { Radio, RadioGroup } from "@chakra-ui/radio";
+import { Input, InputGroup } from "@chakra-ui/input";
 
 const DeleteModalBtn = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -48,15 +48,16 @@ export const GroupModalBtn = () => {
 
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
-                <ModalContent>
+                <ModalContent minH="32.125rem" overflowX="hidden" overflowY="scroll">
                     <ModalHeader pt={6} borderBottom="1px solid" borderBottomColor="gray.200" >
                         <Heading fontSize="lg">그룹 이동</Heading>
                         <ModalCloseButton mt={3} />
                     </ModalHeader>
                     <ModalBody>
+
                     </ModalBody>
                 </ModalContent>
             </Modal>
-        </Box>
+        </Box >
     )
 };

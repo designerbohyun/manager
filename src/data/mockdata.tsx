@@ -4,7 +4,6 @@ export const customerMockData = {
     OptionHeaderData: {
         heading: "고객 목록",
         description: "고객 목록은 비즈니스의 핵심 자산인 고객과의 소중한 연결을 강화하고, 효율적으로 관리할 수 있습니다.고객과의 관계를 개선하고, 손쉽게 효율적으로 관리해보세요.",
-        DefaultbuttonText: "고객 관리",
         OptionbuttonText: "그룹 이동"
     },
 };

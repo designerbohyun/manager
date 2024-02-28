@@ -1,15 +1,14 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/layout";
 import { PrimaryBtnIcon } from './buttons/button'
-import { SecondaryBtn } from "./buttons/button";
 import { MdAdd } from 'react-icons/md'
 import { GroupModalBtn } from "./modal/modal";
+import { AddCustomerDrawer } from "./drawer";
 
 interface OptionHeaderProps {
     OptionHeaderData: {
         heading: string;
         description: string;
-        DefaultbuttonText: string;
         OptionbuttonText: string;
     };
 }
@@ -22,7 +21,7 @@ const OptionHeader: React.FC<OptionHeaderProps> = ({ OptionHeaderData }) => {
 
                 <Box w="fit" h="fit" display="flex" justifyContent="center" alignItems="center" gap={2}>
                     <GroupModalBtn></GroupModalBtn>
-                    <PrimaryBtnIcon leftIcon={<MdAdd />} buttonText={`${OptionHeaderData.OptionbuttonText}`}></PrimaryBtnIcon>
+                    <AddCustomerDrawer></AddCustomerDrawer>
                 </Box>
             </Box>
             <Text color="gray.600" mt={3}>{`${OptionHeaderData.description}`}</Text>
