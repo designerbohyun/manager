@@ -3,12 +3,14 @@ import { Box, Button, Radio } from "@chakra-ui/react";
 
 interface RadioBtnProps {
     buttonText?: string;
-    value: string;
+    Title?: string;
+    value?: string;
+    id?: number;
     isChecked: boolean;
     onChange: (value: string) => void;
 }
 
-const RadioBtn: React.FC<RadioBtnProps> = ({ buttonText = 'Default Text', value = "1", isChecked, onChange }) => {
+const MemberRadio: React.FC<RadioBtnProps> = ({ buttonText = 'Default Text', value = "1", isChecked, onChange }) => {
     const handleClick = () => {
         onChange(value);
     };
@@ -31,8 +33,7 @@ const RadioBtn: React.FC<RadioBtnProps> = ({ buttonText = 'Default Text', value 
         </Radio>
     );
 };
-
-export default RadioBtn;
+export default MemberRadio;
 
 export const MemberRadioGroup = () => {
     const [selectedValue, setSelectedValue] = useState("1");
@@ -42,8 +43,8 @@ export const MemberRadioGroup = () => {
     }
     return (
         <Box>
-            <RadioBtn buttonText="비회원" value="1" isChecked={selectedValue === "1"} onChange={handleChange}></RadioBtn>
-            <RadioBtn buttonText="회원" value="2" isChecked={selectedValue === "2"} onChange={handleChange}></RadioBtn>
+            <MemberRadio buttonText="비회원" value="1" isChecked={selectedValue === "1"} onChange={handleChange}></MemberRadio>
+            <MemberRadio buttonText="회원" value="2" isChecked={selectedValue === "2"} onChange={handleChange}></MemberRadio>
         </Box>
     )
-}
+};
