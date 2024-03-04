@@ -19,12 +19,11 @@ const DeleteModalBtn = () => {
             >
                 <ModalOverlay />
                 <ModalContent >
-                    <ModalHeader pt={6} borderBottom="1px solid" borderBottomColor="gray.200" cursor="default" display="flex" alignItems="center" gap={3}>
-                        <Box bgColor="red.50" w="2.5rem" h="2.5rem" borderRadius="6.25rem" display="flex" justifyContent="center" alignItems="center"><Icon as={MdDeleteOutline} color="red.500" /></Box>
+                    <ModalHeader pt={6} borderBottom="1px solid" borderBottomColor="gray.200" cursor="default" display="flex" alignItems="start" flexDirection="column" gap={3}>
                         <Heading fontSize="lg">고객 정보를 삭제하시겠습니까?</Heading>
                     </ModalHeader>
                     <ModalBody>
-                        <Text color="gray.600">고객 정보를 삭제할 경우, 고객과 관련된 모든
+                        <Text color="gray.600">고객 정보를 삭제할 경우,<br /> 고객과 관련된 모든
                             서비스 이용 내역이 삭제됩니다.</Text>
                     </ModalBody>
 
