@@ -6,42 +6,44 @@ import { GroupBadge } from "./badge";
 import DeleteModalBtn from "./modal/modal";
 
 
+
 export const CustomerTableHeader = () => {
     return (
-        <Thead display="flex" justifyContent="start" alignItems="center" w="100%">
-            <Tr w="100%">
-                <Th p={3} fontSize="sm" w="1%" bg="red.50"><Checkbox colorScheme="cyan" size="lg" /></Th>
-                <Th p={3} fontSize="sm" w="14%" bg="red.100">이름</Th>
-                <Th p={3} fontSize="sm" w="10%" bg="red.200">전화번호</Th>
-                <Th p={3} fontSize="sm" w="14%" bg="red.300">그룹</Th>
-                <Th p={3} fontSize="sm" w="20%" bg="red.400">기타사항</Th>
-                <Th p={3} fontSize="sm" w="1%" bg="red.900"></Th>
+        <Thead>
+            <Tr>
+                <Th fontSize="sm"><Checkbox colorScheme="cyan" size="lg" /></Th>
+                <Th fontSize="sm">이름</Th>
+                <Th fontSize="sm">전화번호</Th>
+                <Th fontSize="sm">그룹</Th>
+                <Th fontSize="sm">기타사항</Th>
+                <Th fontSize="sm"></Th>
             </Tr>
-        </Thead>
+        </Thead >
     )
 };
 
 export const CustomerTableBody = () => {
     return (
-        <Tbody display="flex" justifyContent="center" alignItems="center" w="100%">
+        <Tbody >
             <Tr w="100%">
-                <Td p={3} w="1%"><Checkbox colorScheme="cyan" size="lg" /></Td>
-                <Td p={3} w="14%" overflow="hidden" textOverflow="ellipsis">이름은 영문 숫자로만 입력되며 최대 </Td>
-                <Td p={3} w="10%">010-1234-5678</Td>
-                <Td p={3} w="14%" overflow="hidden">
+                <Td>
+                    <Checkbox colorScheme="cyan" size="lg" />
+                </Td>
+                <Td ><Text w="100%" overflow="hidden" textOverflow="ellipsis">이름은 영문 숫자로만 입력되며 최대</Text></Td>
+                <Td ><Text>010-1234-5678</Text></Td>
+                <Td >
                     <GroupBadge badgeText="이름은 영문 숫자로만 입력되며 최대"></GroupBadge>
                 </Td>
 
-                <Td p={3} overflow="hidden" textOverflow="ellipsis">
-                    <Text w="30%" overflow="hidden" textOverflow="ellipsis">
+                <Td  >
+                    <Text w="100%" overflow="hidden" textOverflow="ellipsis">
                         기타사항은 최대 80자로 입력이 가능한데, 목록에서는 어느정도로 보이는지 측정해야겠다.기타사항은 최대 80자로 입력이 가능한데, 목록에서는 어느
                     </Text>
                 </Td>
-                <Td p={3}>
+                <Td>
                     <DeleteModalBtn></DeleteModalBtn>
                 </Td>
             </Tr>
-
         </Tbody>
     )
 };
@@ -50,8 +52,8 @@ export const CustomerTableBody = () => {
 
 const CustomerTable = () => {
     return (
-        <TableContainer w="100%">
-            <Table variant='simple' display="flex" flexDirection="column">
+        <TableContainer w="100%" overflowX="hidden">
+            <Table variant='simple' w="100%" layout="auto">
                 <CustomerTableHeader></CustomerTableHeader>
                 <CustomerTableBody></CustomerTableBody>
             </Table>
