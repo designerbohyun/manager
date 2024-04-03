@@ -1,14 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import theme from './theme';
 import { ChakraProvider, CSSReset, extendTheme } from '@chakra-ui/react';
 
-const theme = extendTheme({
-  config: {
-    initialColorMode: 'light',
-    useSystemColorMode: false,
-  },
-});
 
 ReactDOM.render(
   <ChakraProvider theme={theme}>
