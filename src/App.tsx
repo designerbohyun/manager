@@ -13,7 +13,7 @@ import ReservationListPage from './page/reservation';
 function App() {
   return (
 
-    <Box backgroundColor="gray.50" position="absolute" top="0" left="0" w="100vw" h="100vh" display="flex" justifyContent="start">
+    <Box backgroundColor="gray.50" position="absolute" top="0" left="0" w="100vw" h="100vh" display="flex" justifyContent="start" minW="75rem">
       < Box h="100%" >
         <SideBar></SideBar>
       </ Box>
