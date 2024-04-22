@@ -6,7 +6,6 @@ import { productCardMockData } from "../data/mockdata";
 import DefaultCard from "../components/card";
 import { Tab } from "@mui/base";
 import Pagination from "../components/pagination";
-import CustomerTable from "../components/table";
 
 const ProductListPage = () => {
     return (
@@ -18,7 +17,7 @@ const ProductListPage = () => {
                 ))}
             </Box>
             <Box w="fit" h="fit" overflow="hidden" borderRadius=".5rem" border="1px solid" borderColor="gray.300" bg="white">
-                <CustomerTable></CustomerTable>
+
             </Box>
             <Box w="full" display="flex" justifyContent="center" alignItems="center" position="absolute" bottom={6} left={1 / 2} translateX={-1 / 2}>
                 <Pagination></Pagination>
