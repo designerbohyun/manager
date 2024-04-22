@@ -14,6 +14,14 @@ const theme = extendTheme({
     global: {
       body: {
         minWidth: "75rem",
+        padding: "0",
+        margin: "0",
+      },
+      tr: {
+        cursor: "default",
+      },
+      td: {
+        cursor: "default",
       },
     },
   },
