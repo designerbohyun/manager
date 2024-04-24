@@ -1,8 +1,8 @@
 import React from "react";
 import { Select } from "@chakra-ui/select";
-import { Box, Text, Textarea } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
-const IconSelect = () => {
+export const IconSelect = () => {
     return (
         <Select size="md" variant="outline" _focus={{ border: "none", ring: "2", ringColor: "cyan.400", }} placeholder='옵션을 선택해주세요.' sx={{ paddingLeft: "40px" }}>
             <option value='option1'>Option 1</option>
@@ -11,8 +11,6 @@ const IconSelect = () => {
         </Select>
     )
 };
-
-export default IconSelect;
 
 export const GroupSelect = ({ Label = "그룹" }) => {
     return (

@@ -3,9 +3,9 @@ import { Box, Link } from "@chakra-ui/layout";
 import { PrimaryButton, TeritaryButton } from "./buttons/Button";
 import { MdCalendarToday, MdOutlineInventory2 } from 'react-icons/md';
 import { Img } from '@chakra-ui/react';
-import AccordionBtn from "./accordion";
+import { AccordionBtn } from "./Accordion";
 
-interface SidebarProps {
+type SidebarProps = {
     onButtonClick: (page: string) => void;
 }
 
@@ -18,5 +18,5 @@ export const SideBar = () => {
             <TeritaryButton w="100%" leftIcon={<MdOutlineInventory2 />} buttonText="상품 관리"></TeritaryButton>
         </Box>
     )
-}
+};
 

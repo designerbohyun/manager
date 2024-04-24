@@ -4,9 +4,9 @@ import { Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, DrawerF
 import { useDisclosure } from "@chakra-ui/hooks";
 import { MdAdd } from "react-icons/md";
 import { Box, Text } from "@chakra-ui/layout";
-import { MemberInput, MemberPriceInput, RequiredInput } from "../inputs";
-import { GroupSelect } from "../select";
-import { EtcField } from "../inputs";
+import { MemberInput, MemberPriceInput, RequiredInput } from "../Inputs";
+import { GroupSelect } from "../Select";
+import { EtcField } from "../Inputs";
 
 
 export const AddCustomerDrawer = () => {

@@ -1,12 +1,12 @@
 import React from "react";
 import { Box } from "@chakra-ui/layout";
-import { DefaultInput } from "./inputs";
+import { DefaultInput } from "./Inputs";
 import { PrimaryButton } from "./buttons/Button";
 import { MdCall, MdPerson, MdGroups } from "react-icons/md";
-import IconSelect from "./select";
+import { IconSelect } from "./Select";
 import { InputGroup, InputLeftElement } from "@chakra-ui/input";
 
-const SearchBar = () => {
+export const SearchBar = () => {
     return (
         <Box w="100%" p="4" bg="white" borderRadius=".5rem" border="1px solid" borderColor="gray.300" display="flex" justifyItems="center" alignItems="center" gap="3">
             <InputGroup >
@@ -24,5 +24,3 @@ const SearchBar = () => {
         </Box >
     )
 };
-
-export default SearchBar;

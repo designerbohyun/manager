@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, HStack } from '@chakra-ui/react';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
-const Pagination = ({ BeforeIcon = <MdChevronLeft />, AfterIcon = <MdChevronRight /> }) => {
+export const Pagination = ({ BeforeIcon = <MdChevronLeft />, AfterIcon = <MdChevronRight /> }) => {
 
     // 목업 데이터
     const mockupData = [
@@ -51,5 +51,3 @@ const Pagination = ({ BeforeIcon = <MdChevronLeft />, AfterIcon = <MdChevronRigh
         </HStack>
     );
 };
-
-export default Pagination;

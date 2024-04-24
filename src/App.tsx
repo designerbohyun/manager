@@ -2,7 +2,7 @@
 import React from 'react';
 import CustomerPage from './page/cusotmer';
 import { Box } from '@chakra-ui/layout';
-import { SideBar } from './components/sidebar';
+import { SideBar } from './components/Sidebar';
 import ProductListPage from './page/productList';
 import GroupListPage from './page/group';
 import ServiceListPage from './page/service';

@@ -26,7 +26,7 @@ export const SuccessAlert = () => {
             저장하기
         </Button >
     )
-}
+};
 
 export const ErrorAlert = () => {
     const toast = useToast()
@@ -50,7 +50,7 @@ export const ErrorAlert = () => {
             이동하기
         </Button >
     )
-}
+};
 
 export const InfoAlert = () => {
     const toast = useToast()
@@ -73,4 +73,4 @@ export const InfoAlert = () => {
             이동하기
         </Button >
     )
-}
+};

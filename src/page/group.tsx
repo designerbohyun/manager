@@ -1,10 +1,9 @@
 import React from "react";
 import { Box } from "@chakra-ui/layout";
-import { DefaultHeader } from "../components/headers";
+import { DefaultHeader } from "../components/Headers";
 import { groupMockData } from "../data/mockdata";
-import { GroupTable } from "../components/table";
-import Pagination from "../components/pagination";
-import { EditGroupDrawer } from "../components/drawer/GroupDrawer";
+import { GroupTable } from "../components/table/GroupTable";
+import { Pagination } from "../components/Pagination";
 
 const GroupListPage = () => {
     return (

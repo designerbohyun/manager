@@ -6,7 +6,7 @@ import { Box, Heading, Text } from "@chakra-ui/layout";
 import { MdDeleteOutline } from "react-icons/md";
 import { GroupRadioItem } from "../buttons/GroupRadio";
 
-const DeleteModalBtn = () => {
+export const DeleteModalBtn = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <Box>
@@ -35,8 +35,6 @@ const DeleteModalBtn = () => {
         </Box>
     )
 };
-
-export default DeleteModalBtn;
 
 
 export const GroupModalBtn = () => {
