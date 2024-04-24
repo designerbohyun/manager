@@ -1,6 +1,6 @@
 import React from "react";
-import { AddCustomerDrawer } from "../components/drawer/customerdrawer";
-import { AddGroupDrawer } from "../components/drawer/groupdrawer";
+import { AddCustomerDrawer } from "../components/drawer/CustomerDrawer";
+import { AddGroupDrawer } from "../components/drawer/GroupDrawer";
 import { GroupModalBtn } from "../components/modal/customermodal";
 
 export const customerMockData = {

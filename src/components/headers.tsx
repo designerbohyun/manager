@@ -3,7 +3,7 @@ import { Box, Heading, Text } from "@chakra-ui/layout";
 import { PrimaryButtonIcon } from './buttons/Button'
 import { MdAdd } from 'react-icons/md'
 import { GroupModalBtn } from "./modal/customermodal";
-import { AddCustomerDrawer } from "./drawer/customerdrawer";
+import { AddCustomerDrawer } from "./drawer/CustomerDrawer";
 
 interface OptionHeaderProps {
     OptionHeaderData: {

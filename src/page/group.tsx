@@ -4,7 +4,7 @@ import { DefaultHeader } from "../components/headers";
 import { groupMockData } from "../data/mockdata";
 import { GroupTable } from "../components/table";
 import Pagination from "../components/pagination";
-import { EditGroupDrawer } from "../components/drawer/groupdrawer";
+import { EditGroupDrawer } from "../components/drawer/GroupDrawer";
 
 const GroupListPage = () => {
     return (

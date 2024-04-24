@@ -5,7 +5,7 @@ import { Text, Box } from "@chakra-ui/layout";
 import { GroupBadge } from "./badge";
 import DeleteModalBtn from "./modal/customermodal";
 import { DeleteModal } from "./modal/groupmodal";
-import { EditGroupDrawer } from "./drawer/groupdrawer";
+import { EditGroupDrawer } from "./drawer/GroupDrawer";
 
 
 
