@@ -19,13 +19,13 @@ function App() {
         <SideBar></SideBar>
       </ Box>
 
-      <Box h="100%" overflowY="scroll" overflowX="hidden" w="100%" hidden>
+      <Box h="100%" overflowY="scroll" overflowX="hidden" w="100%" >
         <CustomerPage></CustomerPage>
       </Box>
 
       <Box w="100%" h="100%" overflowX="hidden" hidden><ProductListPage></ProductListPage></Box>
 
-      <Box w="100%" h="100%" overflowY="scroll" overflowX="hidden" ><GroupListPage></GroupListPage></Box>
+      <Box w="100%" h="100%" overflowY="scroll" overflowX="hidden" hidden><GroupListPage></GroupListPage></Box>
 
       <Box w="100%" hidden><ServiceListPage></ServiceListPage></Box>
 

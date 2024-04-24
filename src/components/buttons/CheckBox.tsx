@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
-const CheckboxBtn = ({ buttonText = 'Default Text' }) => {
+const CheckboxButton = ({ buttonText = 'Default Text' }) => {
     const [isChecked, setIsChecked] = useState(false);
 
     const handleClick = () => {
@@ -25,4 +25,4 @@ const CheckboxBtn = ({ buttonText = 'Default Text' }) => {
     );
 };
 
-export default CheckboxBtn;
+export default CheckboxButton;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/layout";
 import { DefaultInput } from "./inputs";
-import PrimaryBtn from "./buttons/button";
+import { PrimaryButton } from "./buttons/Button";
 import { MdCall, MdPerson, MdGroups } from "react-icons/md";
 import IconSelect from "./select";
 import { InputGroup, InputLeftElement } from "@chakra-ui/input";
@@ -19,7 +19,7 @@ const SearchBar = () => {
             <DefaultInput placeHolder="이름을 입력해주세요." Icon={<MdPerson />}></DefaultInput>
             <DefaultInput placeHolder="전화번호를 입력해주세요." type="number" Icon={<MdCall />}></DefaultInput >
             <Box>
-                <PrimaryBtn buttonText='검색'></PrimaryBtn>
+                <PrimaryButton buttonText='검색'></PrimaryButton>
             </Box>
         </Box >
     )

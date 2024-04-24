@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/layout";
-import { PrimaryBtnIcon } from './buttons/button'
+import { PrimaryButtonIcon } from './buttons/Button'
 import { MdAdd } from 'react-icons/md'
 import { GroupModalBtn } from "./modal/customermodal";
 import { AddCustomerDrawer } from "./drawer/customerdrawer";
@@ -49,7 +49,7 @@ export const DefaultHeader: React.FC<DefaultHeaderProps> = ({ DefaultHeaderData 
                 <Heading fontSize='2xl'>{`${DefaultHeaderData.heading}`}</Heading>
 
                 <Box w="fit" h="fit" display="flex" justifyContent="center" alignItems="center" gap={2}>
-                    {/* <PrimaryBtnIcon leftIcon={<MdAdd />} buttonText={`${DefaultHeaderData.DefaultbuttonText}`}></PrimaryBtnIcon> */}
+                    {/* <PrimaryButtonIcon leftIcon={<MdAdd />} buttonText={`${DefaultHeaderData.DefaultbuttonText}`}></PrimaryButtonIcon> */}
                     <AdditionalComponent />
                 </Box>
             </Box>

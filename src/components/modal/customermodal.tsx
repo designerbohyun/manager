@@ -4,9 +4,6 @@ import { Button, IconButton } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
 import { Box, Heading, Text } from "@chakra-ui/layout";
 import { MdDeleteOutline } from "react-icons/md";
-import { Icon } from "@chakra-ui/icon";
-import { Input, InputGroup } from "@chakra-ui/input";
-import PrimaryBtn from "../buttons/button";
 import { GroupRadioItem } from "../buttons/GroupRadio";
 
 const DeleteModalBtn = () => {
