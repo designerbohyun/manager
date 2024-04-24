@@ -50,7 +50,8 @@ export const EditCustomerDrawer = () => {
     const btnRef = React.useRef()
     return (
         <Box>
-            <Button colorScheme="cyan" size="md" variant="solid" leftIcon={<MdAdd />} color="white" fontWeight="700" onClick={onOpen}>고객 수정</Button>
+            <Text onClick={onOpen} overflow="hidden" textOverflow="ellipsis" noOfLines={1} textDecoration="underline" fontWeight="600" cursor=
+                "pointer">이름은 영문 숫자로만 입력되며 최대</Text>
             <Drawer
                 isOpen={isOpen}
                 placement='right'
