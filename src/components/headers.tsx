@@ -33,7 +33,6 @@ interface DefaultHeaderProps {
     DefaultHeaderData: {
         heading: string;
         description: string;
-        DefaultbuttonText: string;
         AdditionalComponent: React.FC;
     };
 }
@@ -46,7 +45,6 @@ export const DefaultHeader: React.FC<DefaultHeaderProps> = ({ DefaultHeaderData 
                 <Heading fontSize='2xl'>{`${DefaultHeaderData.heading}`}</Heading>
 
                 <Box w="fit" h="fit" display="flex" justifyContent="center" alignItems="center" gap={2}>
-                    {/* <PrimaryButtonIcon leftIcon={<MdAdd />} buttonText={`${DefaultHeaderData.DefaultbuttonText}`}></PrimaryButtonIcon> */}
                     <AdditionalComponent />
                 </Box>
             </Box>

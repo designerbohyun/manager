@@ -58,11 +58,27 @@ export const EtcField = ({ Label = "기타사항" }) => {
     )
 };
 
-export const MemberPriceInput = ({ Label = "회원권 금액", Unit = "원" }) => {
+export const MemberPriceInput = ({ Label = "회원권 금액", Unit = "원", Required = "[필수]" }) => {
     return (
         <Box w="100%" display="flex" flexDirection="column" justifyContent="start" alignItems="start" gap={2}>
             <Box display="flex" justifyContent="start" alignItems="center" gap={2} cursor="default">
                 <Text fontSize="sm" fontWeight="700" color="gray.500" >{Label}</Text>
+                <Text fontSize="sm" fontWeight="700" color="cyan.500">{Required}</Text>
+            </Box>
+            <InputGroup>
+                <Input type="number" focusBorderColor="cyan.400" placeholder="0" />
+                <InputRightElement pointerEvents="none" children="원" />
+            </InputGroup>
+        </Box>
+    )
+};
+
+export const NonMemberPriceInput = ({ Label = "비회원가", Unit = "원", Required = "[필수]" }) => {
+    return (
+        <Box w="100%" display="flex" flexDirection="column" justifyContent="start" alignItems="start" gap={2}>
+            <Box display="flex" justifyContent="start" alignItems="center" gap={2} cursor="default">
+                <Text fontSize="sm" fontWeight="700" color="gray.500" >{Label}</Text>
+                <Text fontSize="sm" fontWeight="700" color="cyan.500">{Required}</Text>
             </Box>
             <InputGroup>
                 <Input type="number" focusBorderColor="cyan.400" placeholder="0" />
