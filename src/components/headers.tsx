@@ -1,8 +1,7 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/layout";
-import { PrimaryButtonIcon } from './buttons/Button'
-import { GroupModalBtn } from "./modal/Customermodal";
-import { AddCustomerDrawer } from "./drawer/CustomerDrawer";
+import { GroupModalBtn } from "./modal/customermodal";
+import { AddCustomerDrawer } from "./drawer/customerdrawer";
 
 type OptionHeaderProps = {
     optionHeaderData: {

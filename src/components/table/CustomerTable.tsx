@@ -2,9 +2,9 @@ import React from "react";
 import { TableContainer, Table, Thead, Tr, Th, Tbody, Td } from "@chakra-ui/table";
 import { Checkbox } from "@chakra-ui/checkbox";
 import { Text, Box } from "@chakra-ui/layout";
-import { GroupBadge } from "../Badge";
-import { DeleteModalBtn } from "../modal/Customermodal";
-import { EditCustomerDrawer } from "../drawer/CustomerDrawer";
+import { GroupBadge } from "../badge";
+import { DeleteModalBtn } from "../modal/customermodal";
+import { EditCustomerDrawer } from "../drawer/customerdrawer";
 
 
 

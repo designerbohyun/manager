@@ -1,8 +1,8 @@
 import React from "react";
 import { TableContainer, Table, Thead, Tr, Th, Tbody, Td } from "@chakra-ui/table";
 import { Text, Box } from "@chakra-ui/layout";
-import { DeleteModal } from "../modal/Groupmodal";
-import { EditGroupDrawer } from "../drawer/GroupDrawer";
+import { DeleteModal } from "../modal/groupmodal";
+import { EditGroupDrawer } from "../drawer/groupdrawer";
 
 
 export const GroupTableHeader = () => {

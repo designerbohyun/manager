@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Radio, Text } from "@chakra-ui/react";
+import { Box, Radio, Text } from "@chakra-ui/react";
 
 type RadioBtnProps = {
     groupname?: string;

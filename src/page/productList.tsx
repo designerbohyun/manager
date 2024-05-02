@@ -1,11 +1,11 @@
 import React from "react";
 import { Box } from "@chakra-ui/layout";
-import { DefaultHeader } from "../components/Headers";
+import { DefaultHeader } from "../components/headers";
 import { productMockData } from "../data/mockdata";
 import { productCardMockData } from "../data/mockdata";
-import DefaultCard from "../components/Card";
+import DefaultCard from "../components/card";
 import { Tab } from "@mui/base";
-import { Pagination } from "../components/Pagination";
+import { Pagination } from "../components/pagination";
 
 const ProductListPage = () => {
     return (
