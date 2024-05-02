@@ -2,8 +2,9 @@ import React from "react";
 import { TableContainer, Table, Thead, Tr, Th, Tbody, Td } from "@chakra-ui/table";
 import { Checkbox } from "@chakra-ui/checkbox";
 import { Text, Box } from "@chakra-ui/layout";
-import { GroupBadge } from "./badge";
-import DeleteModalBtn from "./modal/modal";
+import { GroupBadge } from "../Badge";
+import { DeleteModalBtn } from "../modal/Customermodal";
+import { EditCustomerDrawer } from "../drawer/CustomerDrawer";
 
 
 
@@ -29,7 +30,9 @@ export const CustomerTableBody = () => {
                 <Td pr={4} py="12px">
                     <Checkbox colorScheme="cyan" size="lg" />
                 </Td>
-                <Td pl={0} pr={4} py="12px"><Text overflow="hidden" textOverflow="ellipsis" noOfLines={1}>이름은 영문 숫자로만 입력되며 최대</Text></Td>
+                <Td pl={0} pr={4} py="12px">
+                    <EditCustomerDrawer></EditCustomerDrawer>
+                </Td>
                 <Td pl={0} pr={4} whiteSpace="nowrap" py="12px">010-1234-5678</Td>
                 <Td pl={0} pr={4} py="12px">
                     <GroupBadge badgeText="이름은 영문 숫자로만 입력되며 최대"></GroupBadge>
@@ -48,18 +51,28 @@ export const CustomerTableBody = () => {
     )
 };
 
+export const CustomerTableNone = () => {
+    return (
+        <Tbody>
+            <Tr>
+                <Td colSpan={4} border="none">
+                    <Text fontSize="sm" color="gray.500" textAlign="center" h="100%" minH="25rem">현재 추가된 그룹이 없습니다.</Text>
+                </Td>
+            </Tr>
+        </Tbody>
+    )
+}
 
 
-const CustomerTable = () => {
+export const CustomerTable = () => {
     return (
         <TableContainer w="100%">
             <Table variant='simple' layout="auto" whiteSpace="wrap" >
                 <CustomerTableHeader></CustomerTableHeader>
                 <CustomerTableBody></CustomerTableBody>
+                {/* Customer Table Body에 데이터 없는 경우, */}
+                {/* <CustomerTableNone></CustomerTableNone> */}
             </Table>
         </TableContainer>
     )
 };
-
-export default CustomerTable;
-

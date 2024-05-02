@@ -12,7 +12,7 @@ const mockAccordionData = [
     },
 ];
 
-const AccordionBtn = () => {
+export const AccordionBtn = () => {
     return (
         <Accordion defaultIndex={[0]} allowMultiple borderColor='transparent'>
             {mockAccordionData.map((accordionItem, index) => (
@@ -36,5 +36,3 @@ const AccordionBtn = () => {
         </Accordion>
     )
 };
-
-export default AccordionBtn;

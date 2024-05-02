@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import { Box, Button, Radio, Text } from "@chakra-ui/react";
 
-interface RadioBtnProps {
+type RadioBtnProps = {
     groupname?: string;
-    personcount?: number;
     description?: string;
-    Title?: string;
-    value?: string;
-    id?: number;
+    groupId?: string;
     isChecked: boolean;
     onChange: (value: string) => void;
 }
 
-const GroupRadio: React.FC<RadioBtnProps> = ({ groupname = '그룹 명', personcount = 1, description = "그룹 설명", value = "1", isChecked, onChange }) => {
+const GroupRadio: React.FC<RadioBtnProps> = ({ groupname = '그룹 명', description = "그룹 설명", groupId = "1", isChecked, onChange }) => {
     const handleClick = () => {
-        onChange(value);
+        onChange(groupId);
     };
     return (
         <Radio isChecked={isChecked} display="grid" hidden >
@@ -32,7 +29,7 @@ const GroupRadio: React.FC<RadioBtnProps> = ({ groupname = '그룹 명', personc
             >
                 <Box w="100%" display="flex" justifyContent="space-between" alignItems="center" gap={2}>
                     <Text fontSize="md" fontWeight="700" w="70%" overflow="hidden" textOverflow="ellipsis">{groupname}</Text>
-                    <Text fontSize="md" color="gray.500" display="flex" justifyContent="end" alignItems="center">{personcount}명</Text>
+                    <Text fontSize="md" color="gray.500" display="flex" justifyContent="end" alignItems="center">1명</Text>
                 </Box>
                 <Text fontSize="sm" color="gray.500" w="100%" overflow="hidden" textOverflow="ellipsis">{description}</Text>
             </Box>
@@ -44,19 +41,13 @@ export default GroupRadio;
 export const GroupRadioItem = () => {
     const [selectedValue, setSelectedValue] = useState("1");
 
-    const handleChange = (value: string) => {
-        setSelectedValue(value);
+    const handleChange = (groupId: string) => {
+        setSelectedValue(groupId);
     }
     return (
         <Box display="flex" flexDirection="column" gap={2}>
-            <GroupRadio groupname="비회원" personcount={100} value="1" isChecked={selectedValue === "1"} onChange={handleChange}></GroupRadio>
-            <GroupRadio groupname="회원" personcount={90} value="2" isChecked={selectedValue === "2"} onChange={handleChange}></GroupRadio>
-            <GroupRadio groupname="비회원" personcount={10} value="3" isChecked={selectedValue === "3"} onChange={handleChange}></GroupRadio>
-            <GroupRadio groupname="회원" personcount={1} value="4" isChecked={selectedValue === "4"} onChange={handleChange}></GroupRadio>
-            <GroupRadio groupname="비회원" personcount={100} value="5" isChecked={selectedValue === "5"} onChange={handleChange}></GroupRadio>
-            <GroupRadio groupname="회원" personcount={90} value="6" isChecked={selectedValue === "6"} onChange={handleChange}></GroupRadio>
-            <GroupRadio groupname="비회원" personcount={10} value="7" isChecked={selectedValue === "7"} onChange={handleChange}></GroupRadio>
-            <GroupRadio groupname="회원" personcount={1} value="8" isChecked={selectedValue === "8"} onChange={handleChange}></GroupRadio>
+            <GroupRadio groupname="비회원" groupId="1" isChecked={selectedValue === "1"} onChange={handleChange}></GroupRadio>
+            <GroupRadio groupname="회원" groupId="2" isChecked={selectedValue === "2"} onChange={handleChange}></GroupRadio>
         </Box>
     )
 };

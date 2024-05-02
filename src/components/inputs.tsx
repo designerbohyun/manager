@@ -3,12 +3,12 @@ import { InputGroup, Input } from "@chakra-ui/input";
 import { InputLeftElement, InputRightAddon, InputRightElement, Textarea, Tooltip } from "@chakra-ui/react";
 import { Md10K, MdInfoOutline } from "react-icons/md";
 import { Text, Box } from "@chakra-ui/layout";
-import { MemberRadioGroup } from "./buttons/RadioBtn";
+import { MemberRadioGroup } from "./buttons/RadioButton";
 
 export const DefaultInput = ({ Icon = <Md10K />, placeHolder = "PlaceHolder를 입력해주세요", type = "text" }) => {
     return (
         <InputGroup>
-            <InputLeftElement>
+            <InputLeftElement color="gray.500">
                 {Icon}
             </InputLeftElement>
             <Input size="md" bg="white" w="100%" textOverflow="ellipsis" focusBorderColor="cyan.400" placeholder={placeHolder} type={type}></Input>

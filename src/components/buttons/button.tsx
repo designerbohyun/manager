@@ -1,17 +1,15 @@
 import { Button } from '@chakra-ui/react';
 import { MdAdd, MdEdit, MdMenu } from 'react-icons/md';
 
-const PrimaryBtn = ({ buttonText = 'Default Text' }) => {
+export const PrimaryButton = ({ buttonText = 'Default Text' }) => {
     return (
-        <Button colorScheme="cyan" size="md" variant="solid" color="white" fontWeight="700">
+        <Button colorScheme="cyan" size="md" variant="solid" color="white" fontWeight="700" w={"Number"}>
             {buttonText}
         </Button>
     );
 };
 
-export default PrimaryBtn;
-
-export const PrimaryBtnIcon = ({ leftIcon = <MdAdd />, buttonText = 'Default Text' }) => {
+export const PrimaryButtonIcon = ({ leftIcon = <MdAdd />, buttonText = 'Default Text' }) => {
     return (
         <Button colorScheme="cyan" size="md" variant="solid" leftIcon={leftIcon} color="white" fontWeight="700">
             {buttonText}
@@ -20,7 +18,7 @@ export const PrimaryBtnIcon = ({ leftIcon = <MdAdd />, buttonText = 'Default Tex
 };
 
 
-export const SecondaryBtn = ({ buttonText = 'Default Text' }) => {
+export const SecondaryButton = ({ buttonText = 'Default Text' }) => {
     return (
         <Button colorScheme="gray" size="md" variant="outline" color="gray.600" fontWeight="700" borderColor="gray.300">
             {buttonText}
@@ -28,7 +26,7 @@ export const SecondaryBtn = ({ buttonText = 'Default Text' }) => {
     );
 };
 
-export const TeritaryBtn = ({ leftIcon = <MdMenu />, buttonText = 'Default Text', w = "fit" }) => {
+export const TeritaryButton = ({ leftIcon = <MdMenu />, buttonText = 'Default Text', w = "fit" }) => {
     return (
         <Button w={w} colorScheme="gray" size="md" variant="ghost" color="gray.600" leftIcon={leftIcon} fontWeight="500" _active={{ color: "gray.800" }} _focus={{ color: "gray.800", fontWeight: "700" }} display="flex" justifyContent="start" alignItems="center" fontSize=".875rem">
             {buttonText}
@@ -37,7 +35,7 @@ export const TeritaryBtn = ({ leftIcon = <MdMenu />, buttonText = 'Default Text'
 };
 
 
-export const DeleteBtn = ({ buttonText = 'Default Text' }) => {
+export const DeleteButton = ({ buttonText = 'Default Text' }) => {
     return (
         <Button colorScheme="red" size="md" variant="solid" fontWeight="600">
             {buttonText}
@@ -45,7 +43,7 @@ export const DeleteBtn = ({ buttonText = 'Default Text' }) => {
     );
 };
 
-export const IconBtn = ({ Icon = <MdEdit /> }) => {
+export const IconButton = ({ Icon = <MdEdit /> }) => {
     return (
         <Button colorScheme="gray" size="md" variant="ghost" color="gray.800" fontSize="lg" fontWeight="700" w="2.5rem" p="0">
             {Icon}
@@ -54,7 +52,7 @@ export const IconBtn = ({ Icon = <MdEdit /> }) => {
 };
 
 
-export const NumBtn = ({ Num = 1 }) => {
+export const NumButton = ({ Num = 1 }) => {
     return (
         <Button colorScheme="gray" size="md" variant="outline" fontWeight="600" _active={{ backgroundColor: "cyan.500", textColor: "white" }} _focus={{ backgroundColor: "cyan.500", textColor: "white" }}>
             {Num}

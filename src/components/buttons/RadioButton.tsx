@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import { Box, Button, Radio } from "@chakra-ui/react";
 
-interface RadioBtnProps {
+type RadioButtonProps = {
     buttonText?: string;
-    Title?: string;
-    value?: string;
-    id?: number;
+    ButtonId?: string;
     isChecked: boolean;
     onChange: (value: string) => void;
 }
 
-const MemberRadio: React.FC<RadioBtnProps> = ({ buttonText = 'Default Text', value = "1", isChecked, onChange }) => {
+export const MemberRadio: React.FC<RadioButtonProps> = ({ buttonText = 'Default Text', ButtonId = "1", isChecked, onChange }) => {
     const handleClick = () => {
-        onChange(value);
+        onChange(ButtonId);
     };
     return (
         <Radio isChecked={isChecked} hidden>
@@ -26,14 +24,13 @@ const MemberRadio: React.FC<RadioBtnProps> = ({ buttonText = 'Default Text', val
                 }}
                 color={isChecked ? "white" : "gray.800"}
                 colorScheme={isChecked ? "cyan" : "gray"}
-                value={value}
+                value={ButtonId}
             >
                 {buttonText}
             </Button>
         </Radio>
     );
 };
-export default MemberRadio;
 
 export const MemberRadioGroup = () => {
     const [selectedValue, setSelectedValue] = useState("1");
@@ -43,8 +40,8 @@ export const MemberRadioGroup = () => {
     }
     return (
         <Box>
-            <MemberRadio buttonText="비회원" value="1" isChecked={selectedValue === "1"} onChange={handleChange}></MemberRadio>
-            <MemberRadio buttonText="회원" value="2" isChecked={selectedValue === "2"} onChange={handleChange}></MemberRadio>
+            <MemberRadio buttonText="비회원" ButtonId="1" isChecked={selectedValue === "1"} onChange={handleChange}></MemberRadio>
+            <MemberRadio buttonText="회원" ButtonId="2" isChecked={selectedValue === "2"} onChange={handleChange}></MemberRadio>
         </Box>
     )
 };

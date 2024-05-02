@@ -2,9 +2,8 @@ import React from "react";
 import { Box, HStack } from "@chakra-ui/layout";
 import { Text } from '@chakra-ui/react'
 
-interface CardProps {
+type CardProps = {
     CardData: {
-        id: number;
         label: string;
         icon: string;
         money: string;
