@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/layout";
-import { FilterRadioGroup } from "./buttons/filteradiobutton";
+import { FilterRadioGroup } from "./buttons/FilterRadioButton";
 
 export const Filter = () => {
     return (

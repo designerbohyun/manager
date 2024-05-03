@@ -1,7 +1,7 @@
 import React from "react";
-import { AddCustomerDrawer } from "../components/drawer/customerdrawer";
-import { AddGroupDrawer } from "../components/drawer/groupdrawer";
-import { AddProductDrawer } from "../components/drawer/productdrawer";
+import { AddCustomerDrawer } from "../components/drawer/CustomerDrawer";
+import { AddGroupDrawer } from "../components/drawer/GroupDrawer";
+import { AddProductDrawer } from "../components/drawer/ProductDrawer";
 import { MdBlock, MdStorefront } from "react-icons/md";
 
 export const customerMockData = {

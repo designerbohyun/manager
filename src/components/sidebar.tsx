@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Link } from "@chakra-ui/layout";
-import { PrimaryButton, TeritaryButton } from "./buttons/button";
+import { PrimaryButton, TeritaryButton } from "./buttons/BasicButton";
 import { MdCalendarToday, MdOutlineInventory2 } from 'react-icons/md';
 import { Img } from '@chakra-ui/react';
-import { AccordionBtn } from "./accordion";
+import { AccordionBtn } from "./Accordion";
 
 type SidebarProps = {
     onButtonClick: (page: string) => void;

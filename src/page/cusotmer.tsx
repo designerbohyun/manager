@@ -1,11 +1,11 @@
 import React from "react";
 import { Box } from "@chakra-ui/layout";
 import { customerMockData } from "../data/mockdata";
-import { SearchBar } from "../components/asearchbar";
-import { Filter } from "../components/filter";
-import { CustomerTable } from "../components/table/acustomertable";
-import { Pagination } from "../components/pagination";
-import OptionHeader from "../components/headers";
+import { SearchBar } from "../components/SearchBar";
+import { Filter } from "../components/Filter";
+import { CustomerTable } from "../components/table/CustomerTable";
+import { Pagination } from "../components/Pagination";
+import OptionHeader from "../components/Headers";
 
 
 

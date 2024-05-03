@@ -4,8 +4,8 @@ import { Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, DrawerF
 import { useDisclosure } from "@chakra-ui/hooks";
 import { MdAdd } from "react-icons/md";
 import { Box, Text } from "@chakra-ui/layout";
-import { RequiredInput } from "../inputs";
-import { EtcField } from "../inputs";
+import { RequiredInput } from "../Inputs";
+import { EtcField } from "../Inputs";
 
 
 export const AddGroupDrawer = () => {

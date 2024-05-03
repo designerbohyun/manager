@@ -1,7 +1,7 @@
 import { TableContainer, Table, Thead, Tr, Th, Tbody, Td } from "@chakra-ui/table";
 import { Text, Box } from "@chakra-ui/layout";
-import { EditProductDrawer } from "../drawer/productdrawer";
-import { SwitchStateButton } from "../buttons/switchbutton";
+import { EditProductDrawer } from "../drawer/ProductDrawer";
+import { SwitchStateButton } from "../buttons/SwitchButton";
 import { useState } from "react";
 
 
