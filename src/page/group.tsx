@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@chakra-ui/layout";
 import { DefaultHeader } from "../components/headers";
 import { groupMockData } from "../data/mockdata";
-import { GroupTable } from "../components/table/grouptable";
+import { GroupTable } from "../components/table/agrouptable";
 import { Pagination } from "../components/pagination";
 
 const GroupListPage = () => {

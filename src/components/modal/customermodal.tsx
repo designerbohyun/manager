@@ -4,7 +4,7 @@ import { Button, IconButton } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
 import { Box, Heading, Text } from "@chakra-ui/layout";
 import { MdDeleteOutline } from "react-icons/md";
-import { GroupRadioItem } from "../buttons/groupradio";
+import { GroupRadioItem } from "../buttons/agroupradio";
 
 export const DeleteModalBtn = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
