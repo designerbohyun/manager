@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/layout";
 import { DefaultInput } from "./Inputs";
-import { PrimaryButton } from "./buttons/Button";
+import { PrimaryButton } from "./buttons/BasicButton";
 import { MdCall, MdPerson, MdGroups } from "react-icons/md";
 import { IconSelect } from "./Select";
 import { InputGroup, InputLeftElement } from "@chakra-ui/input";

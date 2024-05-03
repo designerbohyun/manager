@@ -1,7 +1,7 @@
 import React from "react";
 import { TableContainer, Table, Thead, Tr, Th, Tbody, Td } from "@chakra-ui/table";
 import { Text, Box } from "@chakra-ui/layout";
-import { DeleteModal } from "../modal/Groupmodal";
+import { DeleteModal } from "../modal/GroupModal";
 import { EditGroupDrawer } from "../drawer/GroupDrawer";
 
 

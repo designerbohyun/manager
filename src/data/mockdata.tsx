@@ -1,7 +1,8 @@
 import React from "react";
 import { AddCustomerDrawer } from "../components/drawer/CustomerDrawer";
 import { AddGroupDrawer } from "../components/drawer/GroupDrawer";
-import { GroupModalBtn } from "../components/modal/Customermodal";
+import { AddProductDrawer } from "../components/drawer/ProductDrawer";
+import { MdBlock, MdStorefront } from "react-icons/md";
 
 export const customerMockData = {
     OptionHeaderData: {
@@ -15,8 +16,7 @@ export const productMockData = {
     DefaultHeaderData: {
         heading: "상품 목록",
         description: "시스템에 손쉽게 새로운 상품을 추가하여 제품 라인을 확장하세요. 간편하고 직관적인 디자인을 통해 상품 관리로 비즈니스를 확장하고 다양한 선택을 고객에게 제공하세요.",
-        DefaultbuttonText: "상품 추가",
-        AdditionalComponent: AddCustomerDrawer,
+        AdditionalComponent: AddProductDrawer,
     }
 };
 
@@ -33,18 +33,16 @@ export const groupMockData = {
 
 export const productCardMockData = [
     {
-        id: 1,
         label: "판매 중 상품",
-        icon: "<MdStorefont/>",
+        icon: <MdStorefront />,
         money: "100건",
         bgColor: "green.50",
         borderColor: "green.500",
         textColor: "green.600",
     },
     {
-        id: 2,
         label: "판매 중지 상품",
-        icon: "<MdBlock/>",
+        icon: <MdBlock />,
         money: "0건",
         bgColor: "red.50",
         borderColor: "red.500",
