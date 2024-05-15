@@ -8,7 +8,7 @@ import GroupListPage from './page/group';
 import ServiceListPage from './page/service';
 import MembershipListPage from './page/membership';
 import ReservationListPage from './page/reservation';
-import './'
+import './App.css';
 
 
 function App() {
@@ -19,11 +19,11 @@ function App() {
         <SideBar></SideBar>
       </ Box>
 
-      <Box h="100%" overflowY="scroll" overflowX="hidden" w="100%" >
+      <Box h="100%" overflowY="scroll" overflowX="hidden" w="100%" hidden>
         <CustomerPage></CustomerPage>
       </Box>
 
-      <Box w="100%" h="100%" overflowX="hidden" hidden><ProductListPage></ProductListPage></Box>
+      <Box w="100%" h="100%" overflowX="hidden" overflowY="scroll" hidden><ProductListPage></ProductListPage></Box>
 
       <Box w="100%" h="100%" overflowY="scroll" overflowX="hidden" hidden><GroupListPage></GroupListPage></Box>
 
@@ -31,7 +31,7 @@ function App() {
 
       <Box w="100%" hidden><MembershipListPage></MembershipListPage></Box>
 
-      <Box w="100%" hidden><ReservationListPage></ReservationListPage></Box>
+      <Box w="100%" h="100%" overflowX="hidden" overflowY="scroll"><ReservationListPage></ReservationListPage></Box>
 
     </Box >
   );

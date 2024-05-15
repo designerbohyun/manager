@@ -1,5 +1,9 @@
-// theme.ts
 import { extendTheme } from "@chakra-ui/react";
+
+// 공통 스타일 정의
+const commonCursorStyle = {
+  cursor: "default",
+};
 
 const theme = extendTheme({
   config: {
@@ -7,7 +11,7 @@ const theme = extendTheme({
     useSystemColorMode: false,
   },
   fonts: {
-    heading: `'pretendard variable', 'sans-serif'`,
+    heading: `'Pretendard Variable', 'sans-serif'`,
     body: `'Pretendard Variable', 'sans-serif'`,
   },
   styles: {
@@ -17,12 +21,15 @@ const theme = extendTheme({
         padding: "0",
         margin: "0",
       },
-      tr: {
-        cursor: "default",
-      },
-      td: {
-        cursor: "default",
-      },
+      tr: commonCursorStyle,
+      td: commonCursorStyle,
+      p: commonCursorStyle,
+      h1: commonCursorStyle,
+      h2: commonCursorStyle,
+      h3: commonCursorStyle,
+      h4: commonCursorStyle,
+      h5: commonCursorStyle,
+      h6: commonCursorStyle,
     },
   },
 });
