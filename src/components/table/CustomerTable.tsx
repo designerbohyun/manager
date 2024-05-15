@@ -3,7 +3,7 @@ import { TableContainer, Table, Thead, Tr, Th, Tbody, Td } from "@chakra-ui/tabl
 import { Checkbox } from "@chakra-ui/checkbox";
 import { Text, Box } from "@chakra-ui/layout";
 import { GroupBadge } from "../Badge";
-import { DeleteModalBtn } from "../modal/Customermodal";
+import { DeleteModalBtn } from "../modal/CustomerModal";
 import { EditCustomerDrawer } from "../drawer/CustomerDrawer";
 
 

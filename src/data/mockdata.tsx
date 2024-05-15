@@ -1,7 +1,7 @@
 import React from "react";
 import { AddCustomerDrawer } from "../components/drawer/CustomerDrawer";
 import { AddGroupDrawer } from "../components/drawer/GroupDrawer";
-import { GroupModalBtn } from "../components/modal/Customermodal";
+import { GroupModalBtn } from "../components/modal/CustomerModal";
 
 export const customerMockData = {
     OptionHeaderData: {
