@@ -5,7 +5,7 @@ import { productMockData } from "../data/mockdata";
 import { productCardMockData } from "../data/mockdata";
 import DefaultCard from "../components/Card";
 import { Pagination } from "../components/Pagination";
-import { ProductTable } from "../components/table/ProducTable";
+import { ProductTable } from "../components/table/ProductTable";
 
 const ProductListPage = () => {
     return (

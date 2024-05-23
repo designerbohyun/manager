@@ -1,0 +1,25 @@
+/* CustomerRadio 생기는 어색한 Left Margin 삭제 */
+.css-14iyyou {
+  margin: 0;
+}
+
+/* ScrollBar Custom */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e3e8f0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d9e1;
+}

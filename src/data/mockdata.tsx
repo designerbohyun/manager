@@ -1,8 +1,8 @@
 import React from "react";
-import { AddCustomerDrawer } from "../components/drawer/CustomerDrawer";
 import { AddGroupDrawer } from "../components/drawer/GroupDrawer";
 import { AddProductDrawer } from "../components/drawer/ProductDrawer";
 import { MdBlock, MdStorefront } from "react-icons/md";
+import { AddReservation } from "../components/modal/Reservation/ReservationModal";
 
 export const customerMockData = {
     OptionHeaderData: {
@@ -28,6 +28,16 @@ export const groupMockData = {
         AdditionalComponent: AddGroupDrawer,
     }
 };
+
+export const reservationMockData = {
+    DefaultHeaderData: {
+        heading: "예약 현황",
+        description: "예약 상태를 손쉽게 파악하고 예약한 서비스에 대한 정보를 한눈에 확인할 수 있습니다.",
+        DefaultbuttonText: "예약 추가",
+        AdditionalComponent: AddReservation,
+    }
+};
+
 
 
 
